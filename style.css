@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: linear-gradient(rgb(0, 0, 0), red,rgb(0, 0, 0));
+}
+.music_player{
+    position: absolute;
+    width: 400px;
+    min-height: 600px;
+    background: rgb(255, 219, 219);
+    /* background: linear-gradient(rgb(243, 239, 11), rgb(255, 97, 97)); */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+#head {
+    /* text-align: center; */
+    color: rgb(255, 65, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px ;
+    gap: 260px;
+    
+}
+button{
+    cursor: pointer;
+}
+#head button{
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 2px 2px 1px rgb(255, 195, 84);
+}
+
+#head #back-btn{
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    padding: 10px 0;
+    width: px;
+    height: 40px;
+    background: rgb(255, 65, 65);
+    box-shadow: 1px 2px -2px 1px rgb(255, 195, 84);
+    
+}
+
+#head button i{
+  
+  font-size: 20px;
+    color: rgb(255, 0, 0);
+    
+
+}
+
+#head #back-btn i{
+    font-size: 40px;
+    color: white;
+    
+}
+#music_poster{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid white;
+    text-align: center;
+    /* padding-top: 50px; */
+    /* image */
+    margin-top: 25px;
+    margin-bottom: 23px;
+    box-shadow: 4px 3px 3px 6px rgb(255, 103, 103);
+
+}
+
+#music_details{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#music_details h3{
+    font-family: 'Merienda', cursive;
+    font-size: 23px;  
+    font-weight: 700;
+    margin-bottom: 6px;  
+}
+
+#music_details h4{
+    font-family: 'Comic Neue', cursive;
+    font-size: 16px;
+
+}
+
+#progress{
+    -webkit-appearance:none ;
+    width: 80%;
+    height: 6px;
+    background: red;
+    border-radius: 4px;
+    margin: 40px 0 0 0;
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #f53192;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 255, 255);
+}
+#function-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+#function-btn button{
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 1px 4px 4px 2px rgb(255, 109, 109);
+    
+}
+
+#function-btn #ctrlIcon{
+    border-radius: 50%;
+
+    padding: 30px;
+    background: rgb(255, 50, 95);
+    box-shadow: 1px 4px 4px 2px rgb(73, 73, 73);
+
+}
+
+#function-btn #ctrlIcon i{
+    /* font-size: 25px; */
+    color: white;
+}
+#function-btn button i{
+    font-size: 22px;
+    color: rgb(255, 50, 95);
+} 
