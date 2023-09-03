@@ -17,32 +17,34 @@
             
         </div>
 
-        
         <div id="music_details">
-        <!-- song thumbnail -->
-            <img src="468-thumbnail.png"id="music_poster">
-        <!-- Song name and artist name -->
-            <h3>Despacito</h3>
-            <h4>Luios Fonsi Ft. Puerto Rican</h4>
-        <!-- song audio -->
-            <audio id="song">
-                <source src="Despacito(PagalWorld).mp3" type="audio/mpeg">
-            </audio>
-        <!-- progress bar -->
-            <input type="range" value="0" id="progress">
-            </div>
+
+            <!-- song thumbnail -->
+                <img src="468-thumbnail.png"id="music_poster">
+
+            <!-- Song name and artist name -->
+                <h3 id="song_name">Despacito</h3>
+                <h4 id="author">Luios Fonsi Ft. Puerto Rican</h4>
+
+            <!-- song audio -->
+                <audio id="song">
+                    <source src="Songs/Despacito(PagalWorld).mp3" type="audio/mpeg">
+                </audio>
+
+            <!-- progress bar -->
+                <input type="range" value="0" id="progress">
+        </div>
+
         <!-- play pause next previous button -->
-             <div id="function-btn">
-            <button><i class="fa-solid fa-forward fa-flip-horizontal"></i></button>
+        <div id="function-btn">
+            <button onclick="previousSong()"><i class="fa-solid fa-forward fa-flip-horizontal"></i></button>
             <button onclick="playPause()"  id="ctrlIcon"><i id="ctrlIcon2" class="fa-solid fa-play" ></i></button>
-            <button><i class="fa-solid fa-forward"></i></button>
-        </div>
-        </div>
-
-       
-
-        
+            <button onclick="nextSong()"><i class="fa-solid fa-forward"></i></button> 
+        </div> 
+              
     </div>
+
+
     <!-- script for icons we used in this project -->
     <script src="https://kit.fontawesome.com/8872fdb327.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>

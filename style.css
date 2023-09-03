@@ -7,6 +7,7 @@
 body{
 background: linear-gradient(rgb(0, 0, 0), red,rgb(0, 0, 0));
 }
+
 .music_player{
     position: absolute;
     width: 400px;
@@ -16,9 +17,8 @@ background: linear-gradient(rgb(0, 0, 0), red,rgb(0, 0, 0));
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
-
 }
+
 
 #head {
     /* text-align: center; */
@@ -30,9 +30,11 @@ background: linear-gradient(rgb(0, 0, 0), red,rgb(0, 0, 0));
     gap: 260px;
     
 }
+
 button{
     cursor: pointer;
 }
+
 #head button{
     outline: 0;
     border: 0;
@@ -55,11 +57,8 @@ button{
 }
 
 #head button i{
-  
   font-size: 20px;
     color: rgb(255, 0, 0);
-    
-
 }
 
 #head #back-btn i{
@@ -67,19 +66,37 @@ button{
     color: white;
     
 }
+
 #music_poster{
     width: 220px;
     height: 220px;
     border-radius: 50%;
     border: 8px solid white;
     text-align: center;
-    /* padding-top: 50px; */
-    /* image */
+    object-fit: fill;
     margin-top: 25px;
     margin-bottom: 23px;
-    box-shadow: 4px 3px 3px 6px rgb(255, 103, 103);
-
 }
+
+@keyframes thumbnail_anim {
+    0%{
+        border:8px solid red;
+    }
+    25%{
+        border:4px solid rgb(0, 255, 8);
+    }
+    50%{
+        border:2px solid rgb(0, 208, 255);
+
+    }
+    75%{
+        border: 4px solid rgb(251, 255, 0);
+    }
+    100%{
+        border:8px solid rgb(255, 0, 174);
+    }  
+}
+
 
 #music_details{
     display: flex;
@@ -120,6 +137,7 @@ button{
     border-radius: 50%;
     border: 8px solid rgb(255, 255, 255);
 }
+
 #function-btn{
     display: flex;
     align-items: center;
@@ -127,6 +145,7 @@ button{
     gap: 30px;
     margin-top: 40px;
 }
+
 #function-btn button{
     outline: 0;
     border: 0;
@@ -134,8 +153,7 @@ button{
     padding: 20px;
     background: rgb(255, 255, 255);
     text-align: center;
-    box-shadow: 1px 4px 4px 2px rgb(255, 109, 109);
-    
+    box-shadow: 1px 4px 4px 2px rgb(255, 109, 109); 
 }
 
 #function-btn #ctrlIcon{
@@ -151,6 +169,7 @@ button{
     /* font-size: 25px; */
     color: white;
 }
+
 #function-btn button i{
     font-size: 22px;
     color: rgb(255, 50, 95);
